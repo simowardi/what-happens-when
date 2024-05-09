@@ -223,6 +223,14 @@ DNS lookup
   ``ARP process`` below for the DNS server.
 * If the DNS server is on a different subnet, the network library follows
   the ``ARP process`` below for the default gateway IP.
+* If the DNS server is not in the cache or the local hosts file, the browser requests it from the DNS server, usually your router or ISP's DNS server.
+   If the DNS server is on the same network, it uses the ARP process to find it.
+   If the DNS server is on a different network, it uses the ARP process to find the default gateway IP.
+
+
+
+
+
 
 
 ARP process
